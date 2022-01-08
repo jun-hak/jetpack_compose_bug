@@ -20,10 +20,4 @@ class GraphFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_graph, container, false)
     }
-
-
-    companion object {
-        @JvmStatic
-        fun newInstance() = GraphFragment()
-    }
 }

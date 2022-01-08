@@ -23,16 +23,9 @@ class MainActivity : FragmentActivity() {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_main)
 
-
-            val fragments: ArrayList<Fragment> = ArrayList()
-            with(fragments) {
-                add(ConnectFragment.newInstance())
-                add(GraphFragment.newInstance())
-            }
-
             mViewPager2 = findViewById<View>(R.id.viewPager) as ViewPager2
             mViewPager2?.let {
-                it.adapter = ViewPager2Adapter(this, fragments)
+                it.adapter = ViewPager2Adapter(this)
             }
         }
     }

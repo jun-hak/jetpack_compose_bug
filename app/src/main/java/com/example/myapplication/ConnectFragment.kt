@@ -57,11 +57,6 @@ class ConnectFragment : Fragment() {
         return view
     }
 
-
-    companion object {
-        @JvmStatic
-        fun newInstance() = ConnectFragment()
-    }
     @Composable
     fun RecordScreen() {
         var serialNumber by remember { mutableStateOf("81143") }
